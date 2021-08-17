@@ -1,0 +1,131 @@
+@import '../../constant.scss';
+.header-navigation-menu {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+    color: $primary-font-color;
+    height: 7rem;
+    background-color: $primary-color;
+    align-items: center; // for placing content at the center of the div
+     justify-content: space-evenly; // it will add space evenly between all the element present
+}
+
+.navigation-item.logo {
+    background-image: url(#{$roboto-font-path}/logo/amazon-logo.png);
+    background-size: cover;
+    margin-left: 0rem;
+    float: left;
+    width: 15rem;
+    height: 3rem;
+    // margin-left: 15rem;
+}
+.user-deliver-name {
+    color: rgb(204, 204, 204);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.user-address{
+    font-size: 1.7rem;
+    font-family: boldFont;
+}
+
+
+.location-icon {
+    background-image: url(#{$roboto-font-path}/assets/location.png);
+    background-size: 1.8rem;
+    background-repeat: no-repeat;
+    display: flex;
+    font-weight: bolder;
+    // flex-direction: column-reverse;
+    width: 2rem;
+    transform: translateY(80%);
+}
+
+.search-bar{
+    min-width: 50vh;
+    max-width: 190vh;
+    font-size: 1.5rem;
+    border: none;
+}
+.input-size{
+    text-indent: 8px;
+    height:3rem;
+    
+}
+.input-size.select-box{
+    text-indent: 8px;
+    width: 10rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #e2e2e2;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+.input-size.search-btn {
+    text-indent: 8px;
+    width: 4rem; 
+    font-size: 1.5rem;
+    top: 0;
+    background-image:  url(#{$roboto-font-path}/assets/search.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 2rem;
+    align-self: center;
+    border-radius: 0px 5px 5px 0px;
+    background-color: $search-color;
+    border: none;
+}
+
+.cart {
+    width: 4rem; 
+    background-image:  url(#{$roboto-font-path}/assets/cart.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 2rem;
+
+}
+.cart-font {
+    font-family: regularFont;
+}
+
+.no-style-select {
+    text-decoration: none;
+    border-radius:0px;
+    border:none;
+    background-color: $primary-color;
+    color: white;
+}
+.navigation-sub-cat-item{
+    font-family: lightFont;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    // padding-bottom: 3rem;
+}
+
+.app-Download{
+    font-family: boldFont;
+    // border:0.1rem solid white;
+   
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+.app-Download-image {
+    background-image:  url(#{$roboto-font-path}/logo/amazon-app.png);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    width: 3rem;
+}
+.sub-menu {
+    cursor: pointer;
+    background-color: $secondry-color;
+    height: 4rem;
+    align-content: center;
+}
+.navigation-sub-cat-item:hover {
+    cursor: pointer;
+    // font-family: lightFont;
+    // font-size: 1.5rem;
+    border: 1px solid #fff;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+}

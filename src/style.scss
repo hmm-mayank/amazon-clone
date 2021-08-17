@@ -1,0 +1,44 @@
+
+@import './constant.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: regularFont;
+    src: url(#{$roboto-font-path}/font/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: boldFont;
+    src: url(#{$roboto-font-path}/font/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: mediumFont;
+    src: url(#{$roboto-font-path}/font/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: lightFont;
+    src: url(#{$roboto-font-path}/font/Roboto/Roboto-Light.ttf);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: regularFont;
+    /* text-transform: uppercase; */
+}
+.no-style-ul {
+    list-style: none;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex {
+    display: flex;
+}
